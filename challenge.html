@@ -1,10 +1,28 @@
 <html>
     <head>
-        <title>Challenge</title>
+        <meta charset="UTF-8">
+        <title>USERS POSTS</title>
     </head>
+    <script src="js/async.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        let usersWS = "https://jsonplaceholder.typicode.com/users";
+        let postsWS = "https://jsonplaceholder.typicode.com/posts";
+        let getProb = "https://api.genderize.io";
+        let imgWS = "https://joeschmoe.io";
+        let imgM = "/api/v1/male/random";
+        let imgF = "/api/v1/female/random";
+        let imgR = "/api/v1/random";
+        let usersPosts = [];
+        $(document).ready(function() {
+            loadUsersPosts();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/http.js"></script>
+    <script src="js/userPosts.js"></script>
     <body>
-        <div class="container">
-            
+        <div id="container" class="container">
         </div>
     </body>
 </html>
