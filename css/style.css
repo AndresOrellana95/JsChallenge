@@ -1,0 +1,22 @@
+.table {
+    border-spacing:0;
+    border-collapse: collapse;
+}
+td {
+    border: black solid 1px;
+}
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    max-width: 90%;
+}
+
+.card {
+    max-width: 50%;
+}
+
+.text-center {
+    text-align: center;
+}

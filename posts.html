@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>USERS POSTS</title>
+    </head>
+    <script src="js/async.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        let usersWS = "https://jsonplaceholder.typicode.com/users";
+        let postsWS = "https://jsonplaceholder.typicode.com/posts";
+        let usersPosts = [];
+        $(document).ready(function() {
+            loadUsersPosts();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/http.js"></script>
+    <script src="js/userPosts.js"></script>
+    <body>
+        <div class="head-ttile"></div>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="user-info">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="text-center" colspan="4">#1</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Name:</td><td colspan="2">Leanne Graham</td>
+                                </tr>
+                                <tr>
+                                    <td>Username</td><td>Bret</td>
+                                    <td>Email</td><td>Sincere@april.biz</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" colspan="4">Address</td>
+                                </tr>
+                                <tr>
+                                    <td>Street</td><td>Kulas Light</td>
+                                    <td>Suite</td><td>Apt. 556</td>
+                                </tr>
+                                <tr>
+                                    <td>City</td><td>Gwenborough</td>
+                                    <td>Zipcode</td><td>92998-3874</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" colspan="4">Location</td>
+                                </tr>
+                                <tr>
+                                    <td>Lat:</td><td>-37.3159</td>
+                                    <td>Long:</td><td>81.1496</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone:</td><td>1-770-736-8031 x56442</td>
+                                    <td>Website:</td><td>hildegard.org"</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" colspan="4">Company</td>
+                                </tr>
+                                <tr>
+                                    <td>Company name:</td><td>Romaguera-Crona</td>
+                                    <td>Business:</td><td>harness real-time e-markets</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Catchphrase: </td><td colspan="2">Multi-layered client-server neural-net</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">POSTS</td>
+                                </tr>
+                                <tr>
+                                    <td>Title</td>
+                                    <td colspan="3">
+                                        sunt aut facere repellat provident occaecati excepturi optio reprehenderit    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Content</td><td colspan="3">
+                                        quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae 
+                                        ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="post">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
