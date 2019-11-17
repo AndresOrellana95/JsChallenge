@@ -1,9 +1,11 @@
 .table {
+    width: 100%;
     border-spacing:0;
     border-collapse: collapse;
 }
 td {
     border: black solid 1px;
+    width: 25%;
 }
 
 .container {
@@ -11,12 +13,32 @@ td {
     padding-right: 5%;
     width: 90%;
     max-width: 90%;
+    display:inline-block;
+    white-space: nowrap;
 }
 
 .card {
-    max-width: 50%;
+    float: left;
+    margin-top: 5%;
+    padding-left: 3%;
+    padding-top: 5%;
+    max-width: 45%;
+    min-width: 45%;
+    max-height: 900px;
+    overflow-y:scroll;
 }
 
 .text-center {
     text-align: center;
+}
+
+@media(max-width: 1000px) {
+    .card {
+        margin-top: 5%;
+        padding-top: 5%;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 900px;
+        overflow-y:scroll;
+    }
 }
